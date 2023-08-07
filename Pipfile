@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 django = "*"
 django-filer-pdf = "*"
+django-utils-six = "*"
 
 [dev-packages]
 
