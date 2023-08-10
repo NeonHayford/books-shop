@@ -20,5 +20,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('ac/', include('account.urls')),
     path('cx/', include('customer.urls')),
-    path('cb/', include('contributor.urls'))
+    path('cb/', include('contributor.urls')),
+    # browser reload for backwards compatibility with django
+    path("__reload__/", include("django_browser_reload.urls"))
 ]

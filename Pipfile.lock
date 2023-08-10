@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "747b5116a8fb58f4a2d5011886589f6686907e5c274c2f53e73891c298e740a8"
+            "sha256": "6b3e041bdbb17d4c515d4156456107e42967429fe8848ade5abaed488a198606"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -40,6 +40,14 @@
             "index": "pypi",
             "version": "==4.2.4"
         },
+        "django-browser-reload": {
+            "hashes": [
+                "sha256:ce9576bd31562fda01dd8fca73e07696a9a1c7138d2aee084abfb7315dc633a4",
+                "sha256:fe232478a58e9e5d8b703537651d5a76b017d2208d1da5dfbe013937b5cca065"
+            ],
+            "index": "pypi",
+            "version": "==1.11.0"
+        },
         "django-filer": {
             "hashes": [
                 "sha256:7d91610a178e7af6e5d4bb31f15f063c450a65c7c22dd840517279bc4c9b17b7",
@@ -61,6 +69,14 @@
                 "sha256:d6955b5308bf6e41dcb22ba7c96f00b51dfa497a8a5ab1e9c06c7951bf417bf8"
             ],
             "version": "==3.1.0"
+        },
+        "django-tailwind": {
+            "hashes": [
+                "sha256:93db0ed1c18ae21ee8ad7f19f96744f5b2322e9d9872307a06e0f45b21cbe60a",
+                "sha256:d878222a4ef957d1d0f0529dcd28b0065995ca6b8c7b43b058b9214c9e7d8ec0"
+            ],
+            "index": "pypi",
+            "version": "==3.6.0"
         },
         "django-utils-six": {
             "hashes": [

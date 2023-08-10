@@ -1,12 +1,13 @@
 {% extends 'base.html' %}
-{% load static %}
+{% load static tailwind_tags %}
+{% comment %} {% load static %} {% endcomment %}
 
 {% block head %}
-    <link rel="stylesheet" href="{% static 'style.css' %}">
+    {% tailwind_css %}
 {% endblock %}
 
 {% block content %}
-    <h2>CUSTOMER</h2>
+    <h2 class='inline-flex items-center rounded-md bg-orange-200'>CUSTOMER</h2>
         <p>Document contains details about the documentation</p>
     <h2>CUSTOMER</h2>
 {% endblock %}
