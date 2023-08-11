@@ -1,13 +1,12 @@
 {% extends 'base.html' %}
-{% load static tailwind_tags %}
+{% load static %}
 {% comment %} {% load static %} {% endcomment %}
-
 {% block head %}
-    {% tailwind_css %}
+
 {% endblock %}
 
 {% block content %}
-    <h2 class='inline-flex items-center rounded-md bg-orange-200'>CUSTOMER</h2>
+    <h2 class='text-blue-600 dark:text-blue-500'>CUSTOMER</h2>
         <p>Document contains details about the documentation</p>
     <h2>CUSTOMER</h2>
 {% endblock %}

@@ -1,3 +1,62 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.drop{
+    position:relative; 
+    height:300px; 
+    width:300px; 
+    border-radius:80%/80%; 
+    background:#63252e; 
+    opacity:0.8; 
+    /* border:2px solid #ffffff;  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(240, 46, 46, 0.4) 5px 5px, rgba(240, 46, 46, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+  }
+  
+  .drop::before{
+    content:'';
+    position:absolute; 
+    height:90%; 
+    width:90%; 
+    background:#ffffff; 
+    border-radius:51% 48% 52%/ 62% 44% 56% 38%; 
+    box-shadow: inset 20px -20px 22px white, inset 40px -40px 44px #ffa8a8;
+   }
+   
+  /* .drop::after{
+    content: '';
+    position:absolute;
+    height:40px;
+    width:40px;
+    background:#e6fdfb;
+    border-radius: 100%;
+    box-shadow:16px 40px 0 -10px white;
+    opacity:0.8;
+  } */
+
+
+label{
+    font-size: 1rem;
+    color: rgb(29 78 216 );
+  }
+
+input{
+    width:100%;
+    border-radius: .75rem;
+    padding: 8px 12px;
+    border: 1px solid rgb(29 78 216 );
+    
+  }
+
+  p{
+    margin: 1rem 0;
+  }
+
+  .errorlist{
+    color: rgb(255, 0, 0);
+    font-size: small;
+  }
+

@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-jf1_73+bs%dj!ivg-$&-5%&p7k5faqcx0!l$0_g@t5)ippyfaz
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -125,8 +125,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = '/static/'
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_URL = 'theme/static/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
@@ -142,16 +143,10 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'perkalpla@gmail.com'
 EMAIL_HOST_PASSWORD = 'aopisgivwczvdlpe'
 
-TAILWIND_APP_NAME = 'theme'
-
-INTERNAL_IPS = [
-    "127.0.0.1",
-]
-
 NPM_BIN_PATH = 'C:/Program Files/nodejs/npm.cmd'
 
-# TAILWIND_CSS_PATH = 'static/css/styles.css'
+TAILWIND_APP_NAME = 'theme'
 
-# STATICFILES_DIRS = [
-#     BASE_DIR / 'static/'
-# ]
+INTERNAL_IPS=[
+    "127.0.0.1",
+]

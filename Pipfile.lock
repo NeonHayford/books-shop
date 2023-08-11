@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "6b3e041bdbb17d4c515d4156456107e42967429fe8848ade5abaed488a198606"
+            "sha256": "772292c2459cabffe7444c0f0b355a95c50af67ce2d3afd6e25962b2d77528d4"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -277,6 +277,13 @@
                 "sha256:3ae765d3a9409ee60c0fb4d24c2deb6a80617aa927054f5bcd7fc98f0695e587"
             ],
             "version": "==1.5.1"
+        },
+        "tailwindcss": {
+            "hashes": [
+                "sha256:2ba71105662701a522a13367844f7f5e8830456da69f30048291440431f8875b"
+            ],
+            "index": "pypi",
+            "version": "==0.0.1"
         },
         "tinycss2": {
             "hashes": [

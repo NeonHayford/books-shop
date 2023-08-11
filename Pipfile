@@ -9,6 +9,7 @@ django-filer-pdf = "*"
 django-utils-six = "*"
 django-tailwind = "*"
 django-browser-reload = "*"
+tailwindcss = "*"
 
 [dev-packages]
 

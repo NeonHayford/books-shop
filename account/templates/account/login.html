@@ -1,22 +1,32 @@
 {% extends 'base.html' %}
-{% comment %} {% load static %}
-
+ {% load static %}
+{% comment %}
 {% block head %}
   <link rel="stylesheet" href="{% static '/filesystem/style.css' %}">
 {% endblock %} {% endcomment %}
 
 {% block content %}
-    <div>
-        <h2>Login</h2>
+<div class='flex'>
+    <div class ='w-1/2 h-scree flex content-center items-center justify-center bg-orange-200'>
+        <div class='drop'></div>
+    </div>
+    <div class='w-1/2 h-screen p-10'>
+        <div class='flex'>
+            <h2 class='text-7xl text-blue-700'>Login </h2>
+            <div class='w-6 h-6 bg-blue-700'></div>
+        </div>
         <form method="POST">
             {% csrf_token %}
             {{ form.as_p }}
-            <button>Log In</button>
-            <p><a href="{% url 'account:reset_page' %}">Forget Password</a></p>
+            <button class='bg-teal-700 text-white rounded-full px-10 py-1 mt-4' type= 
+            'submit'>Log In</button>
+            <p>
+                <a href="{% url 'account:reset_page' %}">Forget Password</a>
+            </p>
             {% if next %}
                 <input type="hidden" name="next" value="{{ next }}"/>
             {% endif %}
-            <p>Don't have an account? <a href="{% url 'account:signup' %}">Sign Up</a></p>
+            <p>Don't have an account? <a class='text-blue-700' href="{% url 'account:signup' %}">Sign Up</a></p>
         </form>
     </div>
 {% endblock %}
