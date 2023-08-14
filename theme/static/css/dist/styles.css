@@ -703,7 +703,6 @@ video {
   border-radius:80%/80%;
   background:#63252e;
   opacity:0.8;
-  /* border:2px solid #ffffff;  */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -733,14 +732,14 @@ video {
 
 label{
   font-size: 1rem;
-  color: rgb(29 78 216 );
+  color: #0AD4EB;
 }
 
 input{
   width:100%;
   border-radius: .75rem;
   padding: 8px 12px;
-  border: 1px solid rgb(29 78 216 );
+  border: 1px solid #0AD4EB;
 }
 
 p{
@@ -759,3 +758,20 @@ p{
   }
 }
 
+.slate-blue-c{
+  background-color: #0AD4EB;
+}
+
+.slate-blue-txt{
+  color: #0AD4EB;
+}
+
+
+input:focus-visible{
+  outline: 2px dashed #0AD4EB;
+  border: none;
+}
+
+/* input:focus{
+  outline: #ff0000;
+} */
