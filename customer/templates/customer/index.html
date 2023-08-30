@@ -6,7 +6,24 @@
 {% endblock %}
 
 {% block content %}
-    <h2 class='text-blue-600 dark:text-blue-500'>CUSTOMER</h2>
-        <p>Document contains details about the documentation</p>
-    <h2>CUSTOMER</h2>
+    <a href="{% url 'publish_book'%}">
+        Previous Page
+        </a>
+    <h2 class='text-blue-600 dark:text-blue-500'>All Books in store</h2>
+    <table>
+        {% for items in books %}
+            <tr>
+                <th>Book Name</th>
+                <th>Category</th>
+                <th>Author</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>{book.name}</td>
+                <td>{book.category}</td>
+                <td>{book.author}</td>
+                <td>{book.price}</td>
+            </tr>
+        {% endfor %}
+    </table>
 {% endblock %}

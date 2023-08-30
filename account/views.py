@@ -17,7 +17,6 @@ from .forms import SignupForm, LoginForm, PasswordChangeForm
 from .models import CustomUser
 from .token_generate import account_activation_token
 from django.contrib import messages
-from django.urls import reverse
 
 
 

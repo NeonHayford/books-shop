@@ -9,8 +9,40 @@
     <div class="heading">
         {% comment %} <p class="custom-button"><a href="{% url 'filesystem:search' %}">Previous Page</a></p> {% endcomment %}
     </div>
-    <div class="main">
-        <h1>Email verification</h1>
-        <p>A verification email has been sent to your email address. Please follow the link in the email to activate your account.</p>
+    <div>
+        <p class='p-8'>
+            <div class='flex content-center items-center justify-center'>
+                <img style="width: 3rem; height:3rem;" src="/theme/static/css/img/mail.png" >
+                <h1 class='text-7xl slate-blue-txt'>Email verification</h1>
+            </div>
+            <p>Dear <span class='text-orange-500'>{{form.email}}</span>,</p>
+
+                <p>Thank you for signing up with "Ce"! We're excited to have you as part of our community. Before you can start exploring and enjoying all the features we offer, we need to verify your email address.</p>
+
+                <p>A verification email has been sent to the address you provided during registration: <span class='text-orange-500'>{{form.email}}</span>
+                <span>To complete the activation process, please follow the steps below:</span>
+                </p>
+
+                <p>
+                    <ol>
+                        <li>Check Your Inbox: Open your email inbox associated with "<span class='text-orange-500'>{{form.email}}</span>". If you can't find the email in your inbox, please also check your spam or junk folders, as occasionally verification emails may be routed there.</li>
+                
+                        <li>Open the Email: Locate the email with the subject "Activate Your Account - Email Verification Required" from "Ce".</li>
+
+                        <li>Click the Verification Link: Inside the email, you will find a unique verification link. Click on this link or copy and paste it into your web browser's address bar.</li>
+
+                        <li>Activate Your Account: Once you've clicked the link, you'll be directed to a page confirming that your account has been successfully activated. You can then log in to your account and start enjoying our platform.</li>
+                    </ol>
+                </p>
+
+                <p>If you did not sign up for "Ce", or if you believe you've received this email in error, please ignore it. Your account will not be activated unless you click the verification link.</p>
+
+                <p>For any assistance or questions, please don't hesitate to reach out to our support team at "Ce".</p>
+
+                <p>Thank you for choosing "Ce"! We're looking forward to providing you with a           fantastic experience.</p>
+
+                <span>Best regards,<span>
+                <span class='text-orange-500'>The "Ce" Team</span>
+        </p>
     </div>
 {% endblock %}

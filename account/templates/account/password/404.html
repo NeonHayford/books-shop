@@ -1,11 +1,18 @@
 {% extends 'base.html' %}
-{% comment %}{% load static %}
-
- {% block head %}
-  <link rel="stylesheet" href="{% static '/filesystem/style.css' %}">
-{% endblock %} {% endcomment %}
-
+{% load static %}
 {% block content %}
+  <div class='flex vet-out'>
+  <div class='w-1/2 h-screen flex content-center items-center justify-center'>
+    <img src="/theme/static/css/img/404.jpg" alt="">
+  </div>
+  <div class='w-1/2 h-screen  flex justify-center items-center break-words'>
+    <div class='flex-col p-8'>
+      <div class='flex'>
+          <h2 class='text-4xl slate-blue-txt'>Password Link Invalid</h2>
+      </div>
+    </div>
+  </div>
+</div>
   <div>
     <div>
         <h1>password link invalid</h1>
